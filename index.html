@@ -46,12 +46,13 @@
             margin: 0 auto 28px;
         }
         .main-img {
-            width: 100%;
-            max-width: 700px;
-            border-radius: 10px;
-            margin: 0 auto 30px;
-            display: block;
-            box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+         width: 92%; /*限制占容器92%宽度，不撑满溢出*/
+    max-width: 680px; /*最大固定宽度，防止大屏图片过大*/
+    border-radius: 10px;
+    margin: 0 auto 30px;
+    display: block;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+    height: auto; /*高度自动等比缩放，不变形*/
         }
         /* CTA Button (Orange/Green, Rounded) */
         .cta-btn {
@@ -127,10 +128,11 @@
             margin-bottom: 30px;
         }
         .gallery img {
-            width: 100%;
-            border-radius: 8px;
-            object-fit: cover;
-            height: 180px;
+         width: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+    height: 170px; /*统一固定高度，规整排版，避免高低不齐*/
+}
         }
         .spec-table {
             width: 100%;
